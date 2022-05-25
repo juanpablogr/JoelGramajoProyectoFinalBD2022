@@ -12,9 +12,30 @@ namespace JoelGramajoProyectoFinalBD2022
 {
     public partial class FormAddPremio : Form
     {
+        Copilot copilot = new Copilot();
+
         public FormAddPremio()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                copilot.ExecuteCommand("Insert Into Premio (NombrePremio, DescPremio) values (" +
+                    "'" + textBox1.Text + "', " +
+                    "'" + textBox2.Text + "' " +
+                    ")");
+
+                copilot.ShowInfo(this, "Datos guardados con éxito!");
+                this.Dispose();
+            }
+            catch (Exception ex)
+            {
+                copilot.ShowErr(this, ex.Message);
+                copilot.ShowErr(this, "Error, recuerde completar los campos necesarios con los datos correspondientes!");
+            }
         }
     }
 }
