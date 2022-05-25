@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3562A3C6-7E3D-4B44-A4AD-BB0B8BE8AE30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JoelGramajoProyectoFinalBD2022</RootNamespace>
+    <AssemblyName>JoelGramajoProyectoFinalBD2022</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddCliente.Designer.cs">
+      <DependentUpon>FormAddCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddConsolaVJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddConsolaVJ.Designer.cs">
+      <DependentUpon>FormAddConsolaVJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddEmpleado.Designer.cs">
+      <DependentUpon>FormAddEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddGeneroVJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddGeneroVJ.Designer.cs">
+      <DependentUpon>FormAddGeneroVJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddParticipante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddParticipante.Designer.cs">
+      <DependentUpon>FormAddParticipante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddPremio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPremio.Designer.cs">
+      <DependentUpon>FormAddPremio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddRol.Designer.cs">
+      <DependentUpon>FormAddRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaConsolasVJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaConsolasVJ.Designer.cs">
+      <DependentUpon>FormConsultaConsolasVJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarClientes.Designer.cs">
+      <DependentUpon>FormConsultarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarEmpleados.Designer.cs">
+      <DependentUpon>FormConsultarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarParticipantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarParticipantes.Designer.cs">
+      <DependentUpon>FormConsultarParticipantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarPremios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarPremios.Designer.cs">
+      <DependentUpon>FormConsultarPremios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarRoles.Designer.cs">
+      <DependentUpon>FormConsultarRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultasGenerosVJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultasGenerosVJ.Designer.cs">
+      <DependentUpon>FormConsultasGenerosVJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarConsolaVJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarConsolaVJ.Designer.cs">
+      <DependentUpon>FormEditarConsolaVJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarEmpleado.Designer.cs">
+      <DependentUpon>FormEditarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarGeneroVJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarGeneroVJ.Designer.cs">
+      <DependentUpon>FormEditarGeneroVJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarParticipante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarParticipante.Designer.cs">
+      <DependentUpon>FormEditarParticipante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarRol.Designer.cs">
+      <DependentUpon>FormEditarRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditCliente.Designer.cs">
+      <DependentUpon>FormEditCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPremio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPremio.Designer.cs">
+      <DependentUpon>FormEditPremio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddCliente.resx">
+      <DependentUpon>FormAddCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddConsolaVJ.resx">
+      <DependentUpon>FormAddConsolaVJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddEmpleado.resx">
+      <DependentUpon>FormAddEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddGeneroVJ.resx">
+      <DependentUpon>FormAddGeneroVJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddParticipante.resx">
+      <DependentUpon>FormAddParticipante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddPremio.resx">
+      <DependentUpon>FormAddPremio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddRol.resx">
+      <DependentUpon>FormAddRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaConsolasVJ.resx">
+      <DependentUpon>FormConsultaConsolasVJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarClientes.resx">
+      <DependentUpon>FormConsultarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarEmpleados.resx">
+      <DependentUpon>FormConsultarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarParticipantes.resx">
+      <DependentUpon>FormConsultarParticipantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarPremios.resx">
+      <DependentUpon>FormConsultarPremios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarRoles.resx">
+      <DependentUpon>FormConsultarRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultasGenerosVJ.resx">
+      <DependentUpon>FormConsultasGenerosVJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarConsolaVJ.resx">
+      <DependentUpon>FormEditarConsolaVJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarEmpleado.resx">
+      <DependentUpon>FormEditarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarGeneroVJ.resx">
+      <DependentUpon>FormEditarGeneroVJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarParticipante.resx">
+      <DependentUpon>FormEditarParticipante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarRol.resx">
+      <DependentUpon>FormEditarRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditCliente.resx">
+      <DependentUpon>FormEditCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPremio.resx">
+      <DependentUpon>FormEditPremio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
