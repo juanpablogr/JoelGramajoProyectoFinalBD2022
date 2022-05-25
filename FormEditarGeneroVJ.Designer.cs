@@ -43,6 +43,7 @@
             this.button1.TabIndex = 38;
             this.button1.Text = "Actualizar información";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox5
             // 
@@ -90,6 +91,7 @@
             this.Controls.Add(this.label4);
             this.Name = "FormEditarGeneroVJ";
             this.Text = "FormEditarGeneroVJ";
+            this.Load += new System.EventHandler(this.FormEditarGeneroVJ_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
