@@ -12,9 +12,16 @@ namespace JoelGramajoProyectoFinalBD2022
 {
     public partial class FormConsultarPremios : Form
     {
+        Copilot copilot = new Copilot();
+
         public FormConsultarPremios()
         {
             InitializeComponent();
+        }
+
+        private void FormConsultarPremios_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = copilot.ExecuteCommand("Select * From Premio");
         }
     }
 }
