@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Copilot.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +179,36 @@
     <Compile Include="FormEditPremio.Designer.cs">
       <DependentUpon>FormEditPremio.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRol0Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRol0Dashboard.Designer.cs">
+      <DependentUpon>FormRol0Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRol1Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRol1Dashboard.Designer.cs">
+      <DependentUpon>FormRol1Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRol2Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRol2Dashboard.Designer.cs">
+      <DependentUpon>FormRol2Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRol3Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRol3Dashboard.Designer.cs">
+      <DependentUpon>FormRol3Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuarioMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuarioMainForm.Designer.cs">
+      <DependentUpon>FormUsuarioMainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -245,6 +276,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEditPremio.resx">
       <DependentUpon>FormEditPremio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRol0Dashboard.resx">
+      <DependentUpon>FormRol0Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRol1Dashboard.resx">
+      <DependentUpon>FormRol1Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRol2Dashboard.resx">
+      <DependentUpon>FormRol2Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRol3Dashboard.resx">
+      <DependentUpon>FormRol3Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuarioMainForm.resx">
+      <DependentUpon>FormUsuarioMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
