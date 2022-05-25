@@ -22,5 +22,35 @@ namespace JoelGramajoProyectoFinalBD2022
             FormAddConsolaVJ form1 = new FormAddConsolaVJ();
             form1.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FormAddPremio form1 = new FormAddPremio();
+            form1.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FormAddGeneroVJ form2 = new FormAddGeneroVJ();
+            form2.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormConsultarPremios form3 = new FormConsultarPremios();
+            form3.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormConsultaConsolasVJ form4 = new FormConsultaConsolasVJ();
+            form4.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormConsultasGenerosVJ form5 = new FormConsultasGenerosVJ();
+            form5.ShowDialog();
+        }
     }
 }

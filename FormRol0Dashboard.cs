@@ -16,5 +16,23 @@ namespace JoelGramajoProyectoFinalBD2022
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormConsultarPremios form1 = new FormConsultarPremios();
+            form1.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormConsultaConsolasVJ form2 = new FormConsultaConsolasVJ();
+            form2.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormConsultasGenerosVJ form3 = new FormConsultasGenerosVJ();
+            form3.ShowDialog();
+        }
     }
 }
