@@ -16,5 +16,11 @@ namespace JoelGramajoProyectoFinalBD2022
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormAddConsolaVJ form1 = new FormAddConsolaVJ();
+            form1.ShowDialog();
+        }
     }
 }

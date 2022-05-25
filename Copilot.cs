@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace JoelGramajoProyectoFinalBD2022
 {
@@ -13,6 +14,16 @@ namespace JoelGramajoProyectoFinalBD2022
         public Copilot()
         {
 
+        }
+
+        public void ShowErr(Form parent, string msg)
+        {
+            MessageBox.Show(parent, msg, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        public void ShowInfo(Form parent, string msg)
+        {
+            MessageBox.Show(parent, msg, "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public DataTable ExecuteCommand(string command)

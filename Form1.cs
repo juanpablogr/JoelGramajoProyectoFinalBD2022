@@ -35,41 +35,66 @@ namespace JoelGramajoProyectoFinalBD2022
                 FormUsuarioMainForm form = new FormUsuarioMainForm();
                 form.nameUsu = usuariosClientes.Rows[0].Field<string>("NickName");
                 form.ShowDialog();
+
+                textBox1.Text = "";
+                textBox2.Text = "";
             }
             else
             { // loguea otro tipo usuario
                 DataTable table1 = copilot.ExecuteCommand("Select E.NameUsu, E.PasswordUsu, R.IdRol From Ejerce as R, Empleado as E Where R.NameUsu = E.NameUsu and E.NameUsu like '"+ textBox1.Text + "' and E.PasswordUsu like '" + textBox2.Text + "'");
-                
-                switch (table1.Rows[0].Field<int>("IdRol"))
-                {
-                    case 0:
-                        FormRol0Dashboard form = new FormRol0Dashboard();
-                        form.label2.Text = table1.Rows[0].Field<string>("NameUsu");
-                        form.ShowDialog();
-                        break;
+                int idx = table1.Rows[0].Field<int>("IdRol");
 
-                    case 1:
-                        FormRol0Dashboard form1 = new FormRol0Dashboard();
+                if (idx == 0)
+                {
+                    FormRol0Dashboard form = new FormRol0Dashboard();
+                    form.label2.Text = table1.Rows[0].Field<string>("NameUsu");
+                    form.ShowDialog();
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                }
+                else
+                {
+                    if (idx == 1)
+                    {
+                        FormRol1Dashboard form1 = new FormRol1Dashboard();
                         form1.label2.Text = table1.Rows[0].Field<string>("NameUsu");
                         form1.ShowDialog();
-                        break;
-
-                    case 2:
-                        FormRol0Dashboard form2 = new FormRol0Dashboard();
-                        form2.label2.Text = table1.Rows[0].Field<string>("NameUsu");
-                        form2.ShowDialog();
-                        break;
-
-                    case 3:
-                        FormRol0Dashboard form3 = new FormRol0Dashboard();
-                        form3.label2.Text = table1.Rows[0].Field<string>("NameUsu");
-                        form3.ShowDialog();
-                        break;
-
-                    default:
-                        break;
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                    }
+                    else
+                    {
+                        if (idx == 2)
+                        {
+                            FormRol2Dashboard form2 = new FormRol2Dashboard();
+                            form2.label2.Text = table1.Rows[0].Field<string>("NameUsu");
+                            form2.ShowDialog();
+                            textBox1.Text = "";
+                            textBox2.Text = "";
+                        }
+                        else
+                        {
+                            if (idx == 3)
+                            {
+                                FormRol3Dashboard form3 = new FormRol3Dashboard();
+                                form3.label2.Text = table1.Rows[0].Field<string>("NameUsu");
+                                form3.ShowDialog();
+                                textBox1.Text = "";
+                                textBox2.Text = "";
+                            }
+                            else
+                            {
+                                copilot.ShowErr(this, "Contraseña o usuario incorrectos!");
+                            }
+                        }
+                    }
                 }
             }
+
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
 
         }
     }
